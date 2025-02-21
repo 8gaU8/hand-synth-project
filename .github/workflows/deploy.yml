@@ -6,7 +6,7 @@ on:
       - main  # メインブランチにプッシュするとデプロイ
 
 permissions:
-  contents: read
+  contents: write  # ← GitHub Pages にデプロイするための書き込み権限
   pages: write
   id-token: write
 
@@ -33,5 +33,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # デプロイ先のブランチ
-          folder: dist  # ビルド成果物のフォルダ
+          branch: gh-pages
+          folder: dist
+          token: ${{ secrets.GITHUB_TOKEN }}  # ← ここを追加
