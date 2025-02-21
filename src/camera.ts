@@ -25,7 +25,8 @@ export class CameraController {
     this.onLandmarksDetected = processLandmarks;
 
     this.hands = new Hands({
-      locateFile: (file: unknown) => `${import.meta.env.BASE_URL}hand_models/${file}`,
+      locateFile: (file: unknown) =>
+        `${import.meta.env.BASE_URL}hand_models/${file}`,
     });
 
     this.hands.setOptions({
