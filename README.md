@@ -1,6 +1,6 @@
 # Webテルミン
 
-[デモ](https://8gau8.github.io/hand-synth-project/)
+[demo](https://8gau8.github.io/hand-synth-project/)
 
 ## Install
 
