@@ -1,5 +1,7 @@
 # Webテルミン
 
+[デモ](https://8gau8.github.io/hand-synth-project/)
+
 ## Install
 
 1. `git clone`
