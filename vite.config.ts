@@ -5,7 +5,7 @@ export default defineConfig({
     base: process.env.NODE_ENV === "production" ? "/hand-synth-project/" : "/", // GitHub Pages の場合はリポジトリ名
 
     build: {
-        outDir: "docs",
+        outDir: "dist",
     },
     plugins: [
         copy({
